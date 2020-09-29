@@ -1,0 +1,23 @@
+{
+  "name": "express_node_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akups/express_node_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akups/express_node_practice/issues"
+  },
+  "homepage": "https://github.com/akups/express_node_practice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
