@@ -14,10 +14,24 @@ app.get("/shoppingList", (req, res) => {
 });
 
 app.get("/product:productId", (req, res) => {
+  const productId = req.params.productId;
   const product = shoppingList.find(pr, (req, res) => {
-    const body = req.body;
+    return pr.id === productId;
   });
+  res.json(product);
 });
+
+app.post("/product", (req, res) => {
+  const body = req.body;
+  const product = {
+    id: v4(),
+    name: body.name,
+    price: body.price,
+  };
+  shoppingList.push(product);
+  res.json(product);
+});
+
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}`);
 });
